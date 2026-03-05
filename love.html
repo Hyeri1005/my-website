@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>취향 페이지</title>
+
+    <style>
+        @import url("love.css");
+    </style>
+        
+        
+</head>
+<body>
+
+<div class="page-wrapper">
+    <header class="navbar-container">
+        <div>
+            <h1><a href="main.html">Hyeri's</a></h1>
+        </div>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="main.html#introduce">자기 소개</a></li>
+                <li><a href="school.html">학교 생활</a></li>
+                <li><a href="love.html"><span class="menu-color">취향</span></a></li>
+                <li><a href="photo.html">사진첩</a></li>
+                <li><a href="goal.html">소확목</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="divider">
+<!--헤더 끝-->
+
+<!--내용 시작-->
+    <div class="main-container">
+
+        <h2 class="section-title">취향</h2>
+        
+        <div class="sub-nav">
+            <a href="#hobby">취미</a>
+            <span>|</span>
+            <a href="#playlist">플레이리스트</a>
+        </div>
+
+        <section id="hobby">
+            <div class="hobby-gallery-grid">
+                
+                <div class="hobby-item">
+                    <img src="Images/puzzle.jpg" alt="취미 사진 1">
+                    <p>퍼즐</p>
+                    <p style="font-size: 1.25rem">집중해서 맞추고 있으면<br> 시간이 잘 가서 좋아합니다.</p>
+                </div>
+                
+                <div class="hobby-item">
+                    <img src="Images/dessert.jpg" alt="취미 사진 2">
+                    <p>디저트</p>
+                    <p style="font-size: 1.25rem">기분이 안좋을 때 <br>먹으면 기분이 좋아집니다.</p>
+                </div>
+
+                <div class="hobby-item">
+                    <img src="Images/crimescene.jpg" alt="취미 사진 3">
+                    <p>추리 예능</p>
+                    <p style="font-size: 1.25rem">추리하면서 보는 것을 좋아합니다.</p>
+                </div>
+                
+            </div>
+        </section>
+<!--내용 끝-->
+
+<!--하단 시작-->
+        <h2 class="playlist-header" id="playlist">플레이리스트</h2>
+        <details open>
+            <summary>루시-떼굴떼굴</summary>
+            <div class="playlist-content">
+                <audio src="Images/song1.mp3" controls>
+                    <p>오디오를 지원하지 않는 브라우저입니다.</p>
+                </audio>
+                <p class="track-info">이 노래를 좋아하는 이유: 가사가 좋고 신나는 곡이라 기분이 좋아집니다.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Reily-Let It Ring</summary>
+            <div class="playlist-content">
+                <audio src="Images/song2.mp3" controls>
+                    <p>오디오를 지원하지 않는 브라우저입니다.</p>
+                </audio>
+                <p class="track-info">이 노래를 좋아하는 이유: 중독성이 있어서 듣고 나면 계속 생각나서 좋아합니다.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>백아-첫사랑</summary>
+            <div class="playlist-content">   
+                <audio src = "Images/song3.mp3" controls>
+                    <p>오디오를 지원하지 않는 브라우저입니다.</p>
+                </audio>
+                <p class="track-info">이 노래를 좋아하는 이유: 잔잔하고 멜로디가 예뻐서 밤에 침대에 누워서 듣기 좋습니다.</p>
+            </div>
+        </details>
+
+    </div>
+    
+
+    <div class="footer-color">
+        <h2 class="footer-network">network</h2>
+        <hr class="divider">
+        <div class="footer-grid">
+            
+            <div class="footer-section">
+                <h2>장혜리</h2>
+                <div class="icon-group">
+                    <table>
+                        <tr>
+                            <td><a href = "https://blog.naver.com/qoqto1005" target="_blank"><img src = "Images/blog.jpg" width = 20 alt = "블로그 하이퍼링크"></a></td>
+                            <td><a href = "https://www.instagram.com/gpf1005/" target="_blank"><img src = "Images/instagram.png" width = 20.5 alt = "인스타그램 하이퍼링크"></a></td>
+                            <td><a href = "mailto:h3lzl1005@gmail.com"><img src = "Images/email 1.png" width = 26 alt = "이메일 하이퍼링크"></a></td>
+                        </tr>
+                    </table>            
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>학교 생활</h3>
+                <p><a href="school.html">활동</a></p>
+                
+                <h3>취향</h3>
+                <p><a href="love.html#hobby">취미</a></p>
+                <p><a href="love.html#playlist">플레이리스트</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>사진첩</h3>
+                <p><a href="photo.html">여행</a></p>
+                <h3>소확목</h3>
+                <p><a href="goal.html">2025년</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

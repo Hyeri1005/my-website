@@ -1,0 +1,258 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e4e5e7;
+    color: #1f2937;
+    padding: 30px;
+}
+
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    
+}
+.navbar-container h1 {
+    text-shadow: 3px 3px 5px rgb(73, 72, 74);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem; 
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+}
+
+.navbar-container a, 
+        .navbar-container a:visited {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 3rem;
+            font-weight: 400;
+            color: #000000; 
+            text-decoration: none; 
+            margin: 0;
+            line-height: 1;
+        }
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menu-list li {
+    margin-left: 2.7rem; 
+}
+.menu-list li a {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: #080808;
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+.menu-color {
+    font-size: 2rem; 
+    background-color: rgb(251, 237, 218);
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 40px;
+}/*header 끝*/
+
+/* 내용 */
+.main-content {
+    margin-bottom: 40px;
+}
+.section-title {
+    background-color: rgb(251, 237, 218);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #1f2937;
+    padding: 10px 8px;
+}
+
+
+.sub-nav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem; 
+    color: #484a50;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.sub-nav a {
+    color: #303237;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.sub-nav a:hover {
+    color: #1f2937;
+    text-decoration: underline;
+}
+
+
+.hobby-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin-bottom: 4rem;
+}
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobby-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; 
+    aspect-ratio: 5/5;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.15); 
+    margin-bottom: 0.6rem; 
+    transition: transform 0.3s;
+    
+}
+.hobby-item p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem; 
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.playlist-header {
+    background-color:rgb(251, 237, 218);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px 8px
+}
+
+
+details {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+}
+summary {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 0;
+    list-style: none; 
+    display: flex;
+    align-items: center;
+}
+summary::before {
+    content: '▶';
+    margin-right: 10px;
+    transition: transform 0.2s;
+    color: #1f2937;
+    font-size: 0.8em;
+}
+details[open] > summary::before {
+    content: '▼'; 
+}
+
+.playlist-content {
+    padding: 1rem 0 1rem 30px; 
+}
+
+
+.playlist-content audio {
+    width: 100%;
+    margin: 10px 0;
+ 
+}
+
+.track-info {
+    color:#080808;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}/*내용 끝*/
+
+/*하단 시작*/
+.footer-color {
+    background-color: #f2f0f0; 
+    padding: 10px 30px 50px;
+    margin-top: 0px;
+    border-radius: 8px;
+}
+.footer-network {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1f2937; 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+.footer-section h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-section h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #6b7280;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section a, 
+        .footer-section a:visited {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #6b7280; 
+            text-decoration: none; 
+            transition: color 0.2s;
+        }
+
+.icon-group a {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    margin-right: 7px;
+    color: #4b5563;  
+}
